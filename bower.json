@@ -1,6 +1,6 @@
 {
   "name": "mobile-apps",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Sidigdoyo Pribadi <sidigdoyo@gmail.com>"
   ],
@@ -22,13 +22,10 @@
     "angular-messages": "~1.4.7",
     "angular-translate": "~2.8.1",
     "ngCordova": "~0.1.23-alpha",
-    "ngstorage": "~0.3.10",
     "angular-translate-loader-url": "~2.8.1",
     "moment": "~2.10.6",
-    "ng-xCharts": "~0.0.3",
     "angular-routes-provider": "~0.0.1",
-    "angular-ionic-datepicker": "~0.0.2",
-    "angular-nvd3": "~1.0.4"
+    "angular-ionic-datepicker": "~0.0.2"
   },
   "resolutions": {
     "angular": "~1.4.7",
@@ -101,37 +98,6 @@
     },
     "fontawesome": {
       "ignore": true
-    },
-    "ngstorage": {
-      "main": [
-        "./ngStorage.min.js"
-      ]
-    },
-    "moment": {
-      "main": [
-        "./min/moment.min.js"
-      ]
-    },
-    "d3": {
-      "main": [
-        "./d3.js"
-      ]
-    },
-    "nvd3": {
-      "main": [
-        "./build/nv.d3.min.js"
-      ]
-    },
-    "angular-nvd3": {
-      "main": [
-        "./dist/angular-nvd3.min.js"
-      ]
-    },
-    "ng-xCharts": {
-      "main": [
-        "./xcharts.min.js",
-        "./ng-xCharts.js"
-      ]
     },
     "angular-routes-provider": {
       "main": [
