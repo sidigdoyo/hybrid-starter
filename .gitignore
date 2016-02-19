@@ -1,0 +1,10 @@
+.git/
+node_modules/
+bower_components/
+public/
+app/scripts/**/**/index.js
+app/styles/temp/
+api/
+build/
+.sass-cache/
+*.sublime*

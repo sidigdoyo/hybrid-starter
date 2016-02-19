@@ -1,0 +1,147 @@
+{
+  "name": "mobile-apps",
+  "version": "0.0.0",
+  "authors": [
+    "Sidigdoyo Pribadi <sidigdoyo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "~1.4.6",
+    "angular-mocks": "~1.4.6",
+    "compass-mixins": "~1.0.2",
+    "CryptoJS": "https://crypto-js.googlecode.com/files/CryptoJS v3.1.2.zip",
+    "font-awesome": "fontawesome#~4.4.0",
+    "ionic": "~1.1.0",
+    "angular-messages": "~1.4.7",
+    "angular-translate": "~2.8.1",
+    "ngCordova": "~0.1.23-alpha",
+    "ngstorage": "~0.3.10",
+    "angular-translate-loader-url": "~2.8.1",
+    "moment": "~2.10.6",
+    "ng-xCharts": "~0.0.3",
+    "angular-routes-provider": "~0.0.1",
+    "angular-ionic-datepicker": "~0.0.2",
+    "angular-nvd3": "~1.0.4"
+  },
+  "resolutions": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.13"
+  },
+  "overrides": {
+    "CryptoJS": {
+      "main": [
+        "./components/core-min.js",
+        "./components/sha1-min.js"
+      ]
+    },
+    "angular": {
+      "main": [
+        "./angular.min.js.map"
+      ]
+    },
+    "ngCordova": {
+      "main": [
+        "./dist/ng-cordova.js"
+      ]
+    },
+    "angular-cookies": {
+      "main": [
+        "./angular-cookies.min.js",
+        "./angular-cookies.min.js.map"
+      ]
+    },
+    "angular-sanitize": {
+      "main": [
+        "./angular-sanitize.min.js.map"
+      ]
+    },
+    "angular-ui-router": {
+      "ignore": true
+    },
+    "angular-animate": {
+      "main": [
+        "./angular-animate.min.js.map"
+      ]
+    },
+    "angular-mocks": {
+      "main": [
+        "./angular-mocks.js"
+      ]
+    },
+    "angular-messages": {
+      "main": [
+        "./angular-messages.min.js",
+        "./angular-messages.min.js.map"
+      ]
+    },
+    "angular-translate": {
+      "main": [
+        "./angular-translate.min.js"
+      ]
+    },
+    "angular-translate-loader-url": {
+      "main": [
+        "./angular-translate-loader-url.min.js"
+      ]
+    },
+    "ionic": {
+      "main": [
+        "./release/js/ionic.bundle.min.js"
+      ]
+    },
+    "compass-mixins": {
+      "ignore": true
+    },
+    "fontawesome": {
+      "ignore": true
+    },
+    "ngstorage": {
+      "main": [
+        "./ngStorage.min.js"
+      ]
+    },
+    "moment": {
+      "main": [
+        "./min/moment.min.js"
+      ]
+    },
+    "d3": {
+      "main": [
+        "./d3.js"
+      ]
+    },
+    "nvd3": {
+      "main": [
+        "./build/nv.d3.min.js"
+      ]
+    },
+    "angular-nvd3": {
+      "main": [
+        "./dist/angular-nvd3.min.js"
+      ]
+    },
+    "ng-xCharts": {
+      "main": [
+        "./xcharts.min.js",
+        "./ng-xCharts.js"
+      ]
+    },
+    "angular-routes-provider": {
+      "main": [
+        "./src/angular-routes-provider.min.js"
+      ]
+    },
+    "angular-ionic-datepicker": {
+      "main": [
+        "./src/angular-ionic-datepicker.min.js"
+      ]
+    }
+  }
+}

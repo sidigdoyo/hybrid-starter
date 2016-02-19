@@ -1,0 +1,87 @@
+{
+  "name": "falun-gong-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:public": "rimraf public",
+    "prestart": "npm run clean:public",
+    "start": "gulp",
+    "predeploy": "npm run clean:public",
+    "deploy": "gulp deploy",
+    "generate:apps": "rimraf build/www && npm run deploy && gulp copyPublic",
+    
+    "preemulate:ios": "npm run generate:apps",
+    "emulate:ios": "cd build && ionic emulate ios --target='iPad-2'",
+    "postemulate:ios": "cd ..",
+
+    "preemulate:android": "npm run generate:apps",
+    "emulate:android": "cd build && ionic emulate android",
+    "postemulate:android": "cd ..",
+
+    "prebuild:ios": "npm run generate:apps",
+    "build:ios": "cd build && ionic run ios",
+    "postbuild:ios": "cd ..",
+
+    "prebuild:android": "npm run generate:apps",
+    "build:android": "cd build && ionic run android",
+    "postbuild:android": "cd .."
+  },
+  "author": "Sidigdoyo Pribadi <sidigdoyo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.14.0",
+    "bower": "^1.5.3",
+    "browserify": "^11.2.0",
+    "browserify-ng-html2js": "^1.1.4",
+    "browserify-ngannotate": "^1.0.1",
+    "browserify-shim": "^3.8.10",
+    "event-stream": "^3.3.1",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-filter": "^3.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-live-server": "0.0.28",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "lodash": "^3.10.1",
+    "main-bower-files": "^2.9.0",
+    "path": "^0.12.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0"
+  },
+  "browser": {
+    "ionic": "./bower_components/ionic/release/js/ionic.min.js",
+    "ionic-angular": "./bower_components/ionic/release/js/ionic-angular.min.js",
+    "angular": "./bower_components/angular/angular.min.js",
+    "angular-animate": "./bower_components/angular-animate/angular-animate.min.js",
+    "angular-sanitize": "./bower_components/angular-sanitize/angular-sanitize.min.js",
+    "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": "angular",
+    "ionic": "ionic"
+  },
+  "dependencies": {
+    "ng-html2js": "^2.0.0",
+    "q": "^1.4.1",
+    "require": "^2.4.20",
+    "rimraf": "^2.4.3",
+    "stream-browserify": "^2.0.1",
+    "through": "^2.3.8",
+    "transformify": "^0.1.2"
+  }
+}
