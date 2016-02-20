@@ -1,6 +1,6 @@
 {
   "name": "starter-apps",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,19 +10,15 @@
     "predeploy": "npm run clean:public",
     "deploy": "gulp deploy",
     "generate:apps": "rimraf build/www && npm run deploy && gulp copyPublic",
-    
     "preemulate:ios": "npm run generate:apps",
     "emulate:ios": "cd build && ionic emulate ios --target='iPad-2'",
     "postemulate:ios": "cd ..",
-
     "preemulate:android": "npm run generate:apps",
     "emulate:android": "cd build && ionic emulate android",
     "postemulate:android": "cd ..",
-
     "prebuild:ios": "npm run generate:apps",
     "build:ios": "cd build && ionic run ios",
     "postbuild:ios": "cd ..",
-
     "prebuild:android": "npm run generate:apps",
     "build:android": "cd build && ionic run android",
     "postbuild:android": "cd .."

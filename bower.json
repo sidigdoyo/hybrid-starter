@@ -1,6 +1,6 @@
 {
   "name": "mobile-apps",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "authors": [
     "Sidigdoyo Pribadi <sidigdoyo@gmail.com>"
   ],
@@ -17,7 +17,7 @@
     "angular-mocks": "~1.4.6",
     "compass-mixins": "~1.0.2",
     "CryptoJS": "https://crypto-js.googlecode.com/files/CryptoJS v3.1.2.zip",
-    "font-awesome": "fontawesome#~4.4.0",
+    "font-awesome": "fontawesome#^4.5.0",
     "ionic": "~1.1.0",
     "angular-messages": "~1.4.7",
     "angular-translate": "~2.8.1",

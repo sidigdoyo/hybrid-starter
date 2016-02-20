@@ -1,4 +1,9 @@
 
+0.0.3
+- split gulp tasks
+- add font-awesome
+- fix index file references
+
 0.0.2
 - fix bower & node
 - fix starter dependency injector
