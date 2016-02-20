@@ -1,0 +1,47 @@
+{
+	"dir": {
+		"bower": "bower_components",
+		"dest": {
+			"public": {
+				"root": "public",
+				"fonts": "public/fonts",
+				"css": "public/css",
+				"js": "public/javascripts",
+				"libs": "public/javascripts/libraries",
+				"modules": "public/javascripts/modules"
+			}
+		},
+		"app": {
+			"assets": "app/assets",
+			"scripts": "app/scripts",
+			"styles": "app/styles"
+		}
+	},
+	"source": {
+		"assets": "app/assets/**/*",
+		"fonts": {
+			"fa": "bower_components/font-awesome/fonts/**.*",
+			"ionicons": "bower_components/ionic/release/fonts/**/**.*"
+		},
+		"scss": "app/styles/scss/**/**/**/*.scss"
+	},
+	"sass": {
+		"load": [
+			"app/styles",
+			"bower_components/fontawesome/scss",
+			"bower_components/compass-mixins/lib",
+			"bower_components/ionic/scss"
+		]
+	},
+	"uglify": {
+		"mangle": true,
+		"compress": true,
+		"output": {
+			"beautify": true
+		}
+	},
+	"browserify": {
+		"entries": "app/scripts/modules/starter/starter.js",
+		"debug": true
+	}
+}
