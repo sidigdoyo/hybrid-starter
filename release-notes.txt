@@ -1,4 +1,8 @@
 
+0.0.2
+- fix bower & node
+- fix starter dependency injector
+
 0.0.1
 - initial commit
 - add release-notes.txt
